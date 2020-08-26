@@ -1,0 +1,33 @@
+PCB: process control block
+  Task struct.
+  Scheduler: creates an illusion of parallelism for the running processes.
+
+
+* When a file is opened, the OS thinks it as  a command to read the file/address from the memory. This happens through a trap(System call trap).
+
+open(): function to open a file.
+    -takes various parameters.
+    -each process creates a descriptor.(stdin =0, stdout = 1, stderr = 2)
+    *-returns a pointer to the file.
+
+
+PIC(programable interupt controller)
+PIT(programable interupt )
+CLI(clear interupt)
+STI(sit interupt)
+
+*buffered input reader is preffered to read files.
+
+fopen() is the buffered version of open().
+fprintf() writes the data to the file whose pointer is passed as a parameter.
+fscanf() reads from a file.
+  ellipsis = (...)
+  first argument is the file pointer.
+
+
+flock() and lockf().
+
+fread() and fwrite() gives number of bytes written or read.
+  - last argument is the file pointer.
+
+INode: data structure which contains  
